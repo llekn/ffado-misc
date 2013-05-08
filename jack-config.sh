@@ -56,7 +56,7 @@ ctl.!default {
 #4 - Setting things up nicely when loading jack.
 
 cd ~/.config/rncbc.org/
-wget https://github.com/kmixflow/ffado-misc/blob/master/pulse-jack-post-start.sh
+wget https://raw.github.com/kmixflow/ffado-misc/master/pulse-jack-post-start.sh
 
 chmod +x pulse-jack-post-start.sh
 
