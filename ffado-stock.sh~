@@ -1,0 +1,20 @@
+sudo apt-get install libffado2 ffado-tools ffado-mixer-qt4
+
+#INSTALLING JACK
+
+sudo apt-get install jack jackd2 qjackctl
+
+#ANSWER YES WHEN ASKED IF INSTALL JACK WITH REALTIME PRIORITIES (WILL REQUIRE AT LEAST A LOWLATENCY KERNEL)
+# After that you must change jack settings and disable realtime and select the firewire driver. With that you should be able to use the MOTU MK3 DEVICES
+
+###BUG: qjackctl doesn't show menu dialog when icon is on system tray
+
+## INSTALLING A LOWLATENCY KERNEL (Ubuntu 12.04 repositories uses 3.2 lowlatency kernel...)
+
+sudo apt-get install linux-lowlatency
+sudo usermod -a -G audio `whoami`
+
+
+
+
+
